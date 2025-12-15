@@ -30,17 +30,20 @@ Sigue estos pasos para levantar el proyecto en un entorno local nuevo:
   " cp .env.example .env "
 Abre el archivo .env y configura tus credenciales de base de datos (DB_DATABASE, DB_USERNAME, etc.).
 
-6. Generar la clave de aplicación:
+6. Luego creas tu base de datos en mysql workbench 8.0 CE , le pones un nombre por ejemplo : "ppp-system" y ese mismo nombre 
+debe de estar en tu archivo .env
+
+7. Generar la clave de aplicación:
    " php artisan key:generate "
 
-7. Ejecutar las migraciones: Crea las tablas en tu base de datos:
+8. Ejecutar las migraciones: Crea las tablas en tu base de datos:
     " php artisan migrate "
    
-8. Ejecución del Proyecto :
+9. Ejecución del Proyecto :
  abrir dos terminales desde la carpeta raiz donde clonaste el repositorio:
 Terminal 1 (Servidor Backend):
 " php artisan serve "
 Terminal 2 (Compilador de estilos/scripts):
 " npm run dev "
 
-9. finalmente El sistema estará accesible en: http://127.0.0.1:8000 o en el http://localhost:8000 según como configuraste en tu archivo .env
+10. finalmente El sistema estará accesible en: http://127.0.0.1:8000 o en el http://localhost:8000 según como configuraste en tu archivo .env
