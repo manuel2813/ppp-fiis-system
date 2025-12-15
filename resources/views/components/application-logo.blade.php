@@ -1,0 +1,1 @@
+<img src="{{ asset('images/logo_fiis_ppp.png') }}" alt="Logo FIIS" {{ $attributes }}>
